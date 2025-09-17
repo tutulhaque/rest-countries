@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { useState } from "react";
 
 const Country = ({ country }) => {
@@ -19,18 +18,6 @@ const Country = ({ country }) => {
       {visited ? "Visited✅" : "Not Visited🚫"}
     </div>
   );
-};
-
-// prop validation
-Country.propTypes = {
-  country: PropTypes.shape({
-    name: PropTypes.shape({
-      common: PropTypes.string.isRequired,
-    }).isRequired,
-    flags: PropTypes.shape({
-      png: PropTypes.string.isRequired,
-    }).isRequired,
-  }).isRequired,
 };
 
 export default Country;
