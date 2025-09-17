@@ -12,7 +12,7 @@ const Country = ({ country }) => {
       <h3>{name?.common}</h3>
       <img src={flags?.png} alt="" />
       <button onClick={handleVisited}>Visited country</button>
-      {visited ? "✅" : "🚫"}
+      {visited ? "Visited✅" : "Not Visited🚫"}
     </div>
   );
 };
